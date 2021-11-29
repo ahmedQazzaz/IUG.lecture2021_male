@@ -17,6 +17,7 @@
 		7750F734274B7A310082C6FB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750F733274B7A310082C6FB /* AddViewController.swift */; };
 		7750F736274B7B0D0082C6FB /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750F735274B7B0D0082C6FB /* ExampleProtocol.swift */; };
 		77A45268273F9FDC00F10FB1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A45267273F9FDC00F10FB1 /* DetailsViewController.swift */; };
+		77D6E5F627521323006DDA2E /* PickerExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6E5F527521323006DDA2E /* PickerExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7750F733274B7A310082C6FB /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		7750F735274B7B0D0082C6FB /* ExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
 		77A45267273F9FDC00F10FB1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		77D6E5F527521323006DDA2E /* PickerExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerExampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		7740CAC22739036400D51612 /* ContinueWorking2 */ = {
 			isa = PBXGroup;
 			children = (
+				77D6E5F427521315006DDA2E /* Pickers */,
 				7750F730274B7A130082C6FB /* Example 2 */,
 				7740CAC32739036400D51612 /* AppDelegate.swift */,
 				7740CAC52739036400D51612 /* SceneDelegate.swift */,
@@ -85,6 +88,14 @@
 				7750F735274B7B0D0082C6FB /* ExampleProtocol.swift */,
 			);
 			path = "Example 2";
+			sourceTree = "<group>";
+		};
+		77D6E5F427521315006DDA2E /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				77D6E5F527521323006DDA2E /* PickerExampleViewController.swift */,
+			);
+			path = Pickers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				7740CAC62739036400D51612 /* SceneDelegate.swift in Sources */,
 				77A45268273F9FDC00F10FB1 /* DetailsViewController.swift in Sources */,
 				7750F732274B7A250082C6FB /* ExampleViewController.swift in Sources */,
+				77D6E5F627521323006DDA2E /* PickerExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
