@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7726A6E0275B41DC00CA1E68 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7726A6DF275B41DC00CA1E68 /* Colors.xcassets */; };
+		7726A6E2275B420A00CA1E68 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7726A6E1275B420A00CA1E68 /* AuthServices.swift */; };
 		7740CAC42739036400D51612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740CAC32739036400D51612 /* AppDelegate.swift */; };
 		7740CAC62739036400D51612 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740CAC52739036400D51612 /* SceneDelegate.swift */; };
 		7740CAC82739036400D51612 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740CAC72739036400D51612 /* ViewController.swift */; };
@@ -18,9 +20,12 @@
 		7750F736274B7B0D0082C6FB /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750F735274B7B0D0082C6FB /* ExampleProtocol.swift */; };
 		77A45268273F9FDC00F10FB1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A45267273F9FDC00F10FB1 /* DetailsViewController.swift */; };
 		77D6E5F627521323006DDA2E /* PickerExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6E5F527521323006DDA2E /* PickerExampleViewController.swift */; };
+		77D915A72760878500F001F1 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D915A62760878500F001F1 /* ResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7726A6DF275B41DC00CA1E68 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		7726A6E1275B420A00CA1E68 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		7740CAC02739036400D51612 /* ContinueWorking2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinueWorking2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7740CAC32739036400D51612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7740CAC52739036400D51612 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		7750F735274B7B0D0082C6FB /* ExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
 		77A45267273F9FDC00F10FB1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		77D6E5F527521323006DDA2E /* PickerExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerExampleViewController.swift; sourceTree = "<group>"; };
+		77D915A62760878500F001F1 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7726A6D9275B415300CA1E68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7740CAC92739036400D51612 /* Main.storyboard */,
+				7740CACE2739036700D51612 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7726A6DA275B415A00CA1E68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77D915A62760878500F001F1 /* ResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7726A6DB275B416000CA1E68 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77D6E5F427521315006DDA2E /* Pickers */,
+				7750F730274B7A130082C6FB /* Example 2 */,
+				7740CAC72739036400D51612 /* ViewController.swift */,
+				77A45267273F9FDC00F10FB1 /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7726A6DC275B416B00CA1E68 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7726A6E1275B420A00CA1E68 /* AuthServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7726A6DD275B417700CA1E68 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7726A6DE275B41B500CA1E68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7740CACC2739036700D51612 /* Assets.xcassets */,
+				7726A6DF275B41DC00CA1E68 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7740CAB72739036400D51612 = {
 			isa = PBXGroup;
 			children = (
@@ -66,16 +124,15 @@
 		7740CAC22739036400D51612 /* ContinueWorking2 */ = {
 			isa = PBXGroup;
 			children = (
-				77D6E5F427521315006DDA2E /* Pickers */,
-				7750F730274B7A130082C6FB /* Example 2 */,
+				7726A6DD275B417700CA1E68 /* Helpers */,
+				7726A6DC275B416B00CA1E68 /* Services */,
+				7726A6DB275B416000CA1E68 /* ViewControllers */,
+				7726A6DA275B415A00CA1E68 /* Models */,
+				7726A6D9275B415300CA1E68 /* Views */,
+				7726A6DE275B41B500CA1E68 /* Resources */,
 				7740CAC32739036400D51612 /* AppDelegate.swift */,
 				7740CAC52739036400D51612 /* SceneDelegate.swift */,
-				7740CAC72739036400D51612 /* ViewController.swift */,
-				7740CAC92739036400D51612 /* Main.storyboard */,
-				7740CACC2739036700D51612 /* Assets.xcassets */,
-				7740CACE2739036700D51612 /* LaunchScreen.storyboard */,
 				7740CAD12739036700D51612 /* Info.plist */,
-				77A45267273F9FDC00F10FB1 /* DetailsViewController.swift */,
 			);
 			path = ContinueWorking2;
 			sourceTree = "<group>";
@@ -156,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7740CAD02739036700D51612 /* LaunchScreen.storyboard in Resources */,
+				7726A6E0275B41DC00CA1E68 /* Colors.xcassets in Resources */,
 				7740CACD2739036700D51612 /* Assets.xcassets in Resources */,
 				7740CACB2739036400D51612 /* Main.storyboard in Resources */,
 			);
@@ -174,7 +232,9 @@
 				7750F734274B7A310082C6FB /* AddViewController.swift in Sources */,
 				7740CAC62739036400D51612 /* SceneDelegate.swift in Sources */,
 				77A45268273F9FDC00F10FB1 /* DetailsViewController.swift in Sources */,
+				7726A6E2275B420A00CA1E68 /* AuthServices.swift in Sources */,
 				7750F732274B7A250082C6FB /* ExampleViewController.swift in Sources */,
+				77D915A72760878500F001F1 /* ResponseModel.swift in Sources */,
 				77D6E5F627521323006DDA2E /* PickerExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

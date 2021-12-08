@@ -11,10 +11,27 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak private var txt_myField : UITextField!
-    
+    let authManager = AuthServices()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        authManager.loginUsing(username: "ahmed",
+                               password: "123456") { obj in
+            let alert = UIAlertController(title: "Response", message: obj?.user?.username ?? "Unknown error", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            // Execute the code in Main Thread
+            // UI modifications should only be executed on Main Thread
+            DispatchQueue.main.async {
+                self.present(alert, animated: true)
+            }
+        
+        
+        }
+        
+        
+        
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {

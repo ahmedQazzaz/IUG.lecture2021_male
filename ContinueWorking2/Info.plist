@@ -64,5 +64,10 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>The app needs access to your camera for no reasons</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
