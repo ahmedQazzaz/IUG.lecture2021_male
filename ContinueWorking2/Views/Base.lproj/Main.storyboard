@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hrm-yw-nnp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -9,10 +9,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--On Boarding View Controller-->
+        <scene sceneID="Hc8-D2-7ft">
+            <objects>
+                <viewController id="Hrm-yw-nnp" customClass="OnBoardingViewController" customModule="ContinueWorking2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ivi-g0-BUb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OnBoarding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAZ-Ng-Lid">
+                                <rect key="frame" x="161.5" y="442.5" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iIn-BQ-niT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sAZ-Ng-Lid" firstAttribute="centerX" secondItem="iIn-BQ-niT" secondAttribute="centerX" id="imV-gQ-lci"/>
+                            <constraint firstItem="sAZ-Ng-Lid" firstAttribute="centerY" secondItem="iIn-BQ-niT" secondAttribute="centerY" id="tcO-bm-HsG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpE-vP-6OU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671" y="75"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContinueWorking2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ContinueWorking2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,6 +96,22 @@
                                     <segue destination="F38-D7-8bB" kind="show" identifier="blueScreenSegue" id="jho-14-LKO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZb-Tx-UZS">
+                                <rect key="frame" x="20" y="680" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUX-rg-N8P">
+                                <rect key="frame" x="20" y="721" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9oy-XR-a3N"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6A9-en-HVJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,7 +121,9 @@
                             <constraint firstItem="6uI-jP-aNi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="59U-Y2-GVR"/>
                             <constraint firstItem="T3x-Ph-yfi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6fK-Cw-Dbr"/>
                             <constraint firstItem="teN-kF-dAl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8XC-oV-EII"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JZb-Tx-UZS" secondAttribute="trailing" constant="20" id="8ek-xo-Qd6"/>
                             <constraint firstItem="6uI-jP-aNi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="9s1-Um-EUZ"/>
+                            <constraint firstItem="JZb-Tx-UZS" firstAttribute="top" secondItem="teN-kF-dAl" secondAttribute="bottom" constant="80" id="Bbq-OD-09h"/>
                             <constraint firstItem="3RO-Jd-ibo" firstAttribute="top" secondItem="fpX-1b-f9Q" secondAttribute="bottom" constant="20" id="Dxd-gc-HCV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ogY-U8-MfS" secondAttribute="trailing" constant="20" id="Jx8-Rj-6vz"/>
                             <constraint firstItem="aBc-lD-n4H" firstAttribute="top" secondItem="ogY-U8-MfS" secondAttribute="bottom" constant="20" id="KiX-5V-sII"/>
@@ -86,17 +131,21 @@
                             <constraint firstItem="fpX-1b-f9Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M3u-qz-kaG"/>
                             <constraint firstItem="teN-kF-dAl" firstAttribute="top" secondItem="aBc-lD-n4H" secondAttribute="bottom" constant="27.670000000000002" id="MTy-rn-rYR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fpX-1b-f9Q" secondAttribute="trailing" constant="20" id="TQb-Ub-TzK"/>
+                            <constraint firstItem="OUX-rg-N8P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ube-4a-RI4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aBc-lD-n4H" secondAttribute="trailing" constant="20" id="Xqt-vR-Rer"/>
+                            <constraint firstItem="JZb-Tx-UZS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zr2-Hz-DeF"/>
                             <constraint firstItem="fpX-1b-f9Q" firstAttribute="top" secondItem="6uI-jP-aNi" secondAttribute="bottom" constant="20" id="aXF-B4-oU1"/>
                             <constraint firstItem="3RO-Jd-ibo" firstAttribute="leading" secondItem="fpX-1b-f9Q" secondAttribute="leading" id="bho-zH-HUM"/>
                             <constraint firstItem="ogY-U8-MfS" firstAttribute="top" secondItem="T3x-Ph-yfi" secondAttribute="bottom" constant="20" id="c10-ug-i8N"/>
                             <constraint firstItem="6uI-jP-aNi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="dUA-ns-I98"/>
+                            <constraint firstItem="OUX-rg-N8P" firstAttribute="top" secondItem="JZb-Tx-UZS" secondAttribute="bottom" constant="20" id="g2Y-Yw-bnT"/>
                             <constraint firstItem="T3x-Ph-yfi" firstAttribute="top" secondItem="3RO-Jd-ibo" secondAttribute="bottom" constant="20" id="g9S-rw-2gp"/>
                             <constraint firstItem="aBc-lD-n4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hLW-hu-Qlr"/>
                             <constraint firstItem="ogY-U8-MfS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hOU-7M-b9u"/>
                             <constraint firstItem="6uI-jP-aNi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lrZ-hY-3oQ"/>
                             <constraint firstItem="3RO-Jd-ibo" firstAttribute="trailing" secondItem="fpX-1b-f9Q" secondAttribute="trailing" id="pYJ-Ij-obO"/>
                             <constraint firstItem="fpX-1b-f9Q" firstAttribute="leading" secondItem="6uI-jP-aNi" secondAttribute="trailing" constant="20" id="pzL-DC-GgF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OUX-rg-N8P" secondAttribute="trailing" constant="20" id="rjb-bs-956"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -129,12 +178,14 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="btn_start" destination="OUX-rg-N8P" id="etN-ya-nRQ"/>
+                        <outlet property="lb_timer" destination="JZb-Tx-UZS" id="DoT-Wj-7g9"/>
                         <outlet property="txt_myField" destination="aBc-lD-n4H" id="TVJ-06-Chz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.37383177570092" y="75.161987041036724"/>
+            <point key="canvasLocation" x="128.98550724637681" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v4B-qT-U7D">

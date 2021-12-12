@@ -18,6 +18,7 @@
 		7750F732274B7A250082C6FB /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750F731274B7A250082C6FB /* ExampleViewController.swift */; };
 		7750F734274B7A310082C6FB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750F733274B7A310082C6FB /* AddViewController.swift */; };
 		7750F736274B7B0D0082C6FB /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750F735274B7B0D0082C6FB /* ExampleProtocol.swift */; };
+		775A994D27647D47006D2068 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A994C27647D47006D2068 /* OnBoardingViewController.swift */; };
 		77A45268273F9FDC00F10FB1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A45267273F9FDC00F10FB1 /* DetailsViewController.swift */; };
 		77D6E5F627521323006DDA2E /* PickerExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6E5F527521323006DDA2E /* PickerExampleViewController.swift */; };
 		77D915A72760878500F001F1 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D915A62760878500F001F1 /* ResponseModel.swift */; };
@@ -37,6 +38,7 @@
 		7750F731274B7A250082C6FB /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		7750F733274B7A310082C6FB /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		7750F735274B7B0D0082C6FB /* ExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
+		775A994C27647D47006D2068 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		77A45267273F9FDC00F10FB1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		77D6E5F527521323006DDA2E /* PickerExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerExampleViewController.swift; sourceTree = "<group>"; };
 		77D915A62760878500F001F1 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				7750F730274B7A130082C6FB /* Example 2 */,
 				7740CAC72739036400D51612 /* ViewController.swift */,
 				77A45267273F9FDC00F10FB1 /* DetailsViewController.swift */,
+				775A994C27647D47006D2068 /* OnBoardingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				7750F732274B7A250082C6FB /* ExampleViewController.swift in Sources */,
 				77D915A72760878500F001F1 /* ResponseModel.swift in Sources */,
 				77D6E5F627521323006DDA2E /* PickerExampleViewController.swift in Sources */,
+				775A994D27647D47006D2068 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
